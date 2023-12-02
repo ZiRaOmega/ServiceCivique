@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url(font/LEMONMILK-Regular.otf) format('opentype');
+}
+body{
+    background-color: hsl(30, 35%, 50%);
+    font-family: 'Lemon Milk';
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    border: 20px solid #000000;
+    padding-bottom: 40px;
+/*     padding: 50px;
+ */    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Animation effect */
+
+    /* Make the box circular */
+    border-radius: 50%;
+    width: 500px;  /* Fixed width */
+    height: 500px; /* Fixed height, same as width for circle */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.box:hover{
+    border: 20px solid #000;
+    transform: scale(1.1); /* Enlarge the box */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px; /* Space between grid items */
+}
+.green{
+    background-color: green;
+}
